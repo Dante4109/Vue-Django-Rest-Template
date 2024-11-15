@@ -1,0 +1,20 @@
+[
+    {
+        "AllowedHeaders": [
+            "*"
+        ],
+        "AllowedMethods": [
+            "GET",
+            "HEAD",
+            "PUT",
+            "POST",
+            "DELETE"
+        ],
+        "AllowedOrigins": [
+            "*"
+            "https://affinity-core.herokuapp.com/",
+            "http://affinity-core.herokuapp.com/"
+        ],
+        "ExposeHeaders": []
+    }
+]
