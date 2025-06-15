@@ -8,12 +8,12 @@ module.exports = {
     proxy: {
       "/api*": {
         // Forward frontend dev server request for /api to Django Rest Framework dev server
-        target: "http://localhost:8000/"
-      }
-    }
+        target: "http://localhost:8000/",
+      },
+    },
   },
 
   configureWebpack: {
-    devtool: "source-map"
-  }
+    devtool: "source-map",
+  },
 };
