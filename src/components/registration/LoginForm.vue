@@ -3,7 +3,8 @@
   color="primary"
   class="darken-1"
   tile
->
+  data-cy="login-form"
+  >
   <v-container>
     <h1 class="display-2 text-center ma-4 pa-2">Login</h1>
     <h3 class="subtitle text-center ma-4 pa-2">Welcome back. Login to manage your account.</h3>
@@ -21,6 +22,7 @@
             label="Email" 
             required
             solo-inverted
+            data-cy="login-email-field"
           ></v-text-field>
         </v-row>
         <v-row align="center">
@@ -30,10 +32,11 @@
             required
             type="password"
             solo-inverted
+            data-cy="login-password-field"
           ></v-text-field>
         </v-row>
       </v-col>
-      <v-btn outlined @click="login" :disabled="!valid || !email && !password">Login</v-btn>
+      <v-btn outlined data-cy="login-submit-btn" @click="login" :disabled="!valid || !email && !password">Login</v-btn>
     </v-form>
   </v-container>
   </v-card>

@@ -57,7 +57,7 @@
 
 <!-- Login or User profile icon -->
 <div :key="user" v-if="!user">
-      <v-btn id="user-login" right icon @click="openAccountAccess">
+      <v-btn data-cy="login-btn-no-user" right icon @click="openAccountAccess">
             <v-icon
             v-bind="attrs"
             v-on="on"

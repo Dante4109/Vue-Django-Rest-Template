@@ -10,7 +10,14 @@ describe("Main Page", () => {
     cy.get("h1").should("contain.text", "Vuetify x Django");
   });
 
-  it("see the login button in the top right", () => {
-    cy.get("button").contains("class=mdi-login").should("exist");
+  it("should display the login button in the top right", () => {
+    cy.get('[data-cy="profile-btn-no-user"]')
+      .should("be.visible")
+      .should("exist");
+  });
+
+  it("should open the login form when the profile icon is clicked", () => {
+    cy.get('[data-cy="profile-btn-no-user"]').click();
+    cy.get('[data-cy="login-form"]').should("exist");
   });
 });

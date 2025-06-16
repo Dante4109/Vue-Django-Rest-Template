@@ -85,8 +85,8 @@ export default {
   created() {
     this.emitter.on('account_access', data => {
       this.dialog = true;
-
-      if(data.next) {
+      
+      if(data && data.next) {
         this.next = data.next
       }
     })

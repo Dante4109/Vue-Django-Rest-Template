@@ -37,7 +37,7 @@
 
 <!-- Login or User profile icon -->
 <div :key="user" v-if="!user">
-      <v-btn right icon @click="openAccountAccess">
+      <v-btn data-cy="profile-btn-no-user" right icon @click="openAccountAccess">
             <v-icon
             v-bind="attrs"
             v-on="on"
@@ -46,7 +46,7 @@
     </div>
 
     <div :key="user" v-else>
-      <v-btn icon right @click="toggleDrawer">
+      <v-btn data-cy="profile-btn-user" icon right @click="toggleDrawer">
         <div v-if="user.profile.ImgUrl==='none' || ''">
               <v-icon
                 v-bind="attrs"
