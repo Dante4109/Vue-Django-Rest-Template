@@ -23,6 +23,7 @@ declare module 'vue-router/auto-routes' {
     '/demo/file_tree': RouteRecordInfo<'/demo/file_tree', '/demo/file_tree', Record<never, never>, Record<never, never>>,
     '/demo/image_manager': RouteRecordInfo<'/demo/image_manager', '/demo/image_manager', Record<never, never>, Record<never, never>>,
     '/demo/meme_maker': RouteRecordInfo<'/demo/meme_maker', '/demo/meme_maker', Record<never, never>, Record<never, never>>,
+    '/demo/meme_maker_test': RouteRecordInfo<'/demo/meme_maker_test', '/demo/meme_maker_test', Record<never, never>, Record<never, never>>,
     '/demo/news_feed': RouteRecordInfo<'/demo/news_feed', '/demo/news_feed', Record<never, never>, Record<never, never>>,
     '/demo/news_feed_test': RouteRecordInfo<'/demo/news_feed_test', '/demo/news_feed_test', Record<never, never>, Record<never, never>>,
     '/FakePage': RouteRecordInfo<'/FakePage', '/FakePage', Record<never, never>, Record<never, never>>,

@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "vite --mode development",
     "prod": "vite --mode production",
+    "dev_host": "vite --mode development --port 3000 --host",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --fix --ignore-path .gitignore",
