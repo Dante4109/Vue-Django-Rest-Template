@@ -4,7 +4,7 @@
       <v-layout column class="white--text">
         <v-row>
           <v-col cols="12">
-            <h1>News Feed</h1>
+            <h1>News Feedd</h1>
             <p>Page coming soon!</p>
           </v-col>
         </v-row>
