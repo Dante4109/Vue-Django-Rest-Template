@@ -1,4 +1,5 @@
 <template>
+  <v-app>
     <!-- App Bar -->
     <v-app-bar color="primary" dark app>
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
@@ -186,13 +187,12 @@
           </v-col>
         </v-row>
       </v-container>
-    </v-main>  
+    </v-main>
+  </v-app>
 </template>
 
 <script setup>
 import { ref } from 'vue';
-
-const name = 'News Feed';
 
 const newPostContent = ref('');
 
@@ -210,7 +210,7 @@ const posts = ref([
       {
         username: 'Sarah Johnson',
         avatar: 'https://randomuser.me/api/portraits/women/44.jpg',
-        content: "'Looking good! What's your workout routine?'"
+        content: 'Looking good! What's your workout routine?'
       },
       {
         username: 'Mike Wilson',
