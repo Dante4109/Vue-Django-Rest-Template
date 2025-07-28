@@ -194,6 +194,8 @@
 <script setup>
 import { ref } from 'vue';
 
+const name = 'News Feed';
+
 const newPostContent = ref('');
 
 const posts = ref([
