@@ -138,3 +138,16 @@ dev_live:
 	npm run dev  & # Runs npm server in the foreground
 	python manage.py runserver # Runs Python server in the foreground
 	@echo ${GREEN}Development Servers Started${WHITE}
+
+# Example Makefile
+PROJECT_ROOT := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
+
+all:
+		@echo "Current directory: $(PWD)"
+		@echo "Project root: $(PROJECT_ROOT)"
+		$(MAKE) -C $(PROJECT_ROOT) actual_target
+
+actual_target:
+		@echo "Now in the project root for actual_target"
+		# Commands that rely on being in the project root
+		# e.g., compile source files, run tests
